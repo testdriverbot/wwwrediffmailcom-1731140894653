@@ -1,0 +1,44 @@
+version: 4.1.13
+steps:
+  - prompt: Locate the "NEWS" link in the navigation bar.
+    commands:
+      - command: hover-text
+        text: NEWS
+        description: link in the navigation bar
+        action: hover
+  - prompt: Click the "NEWS" link.
+    commands:
+      - command: hover-text
+        text: NEWS
+        description: link in the navigation bar
+        action: click
+  - prompt: Click the "NEWS" link.
+    commands:
+      - command: hover-text
+        text: NEWS
+        description: link in the navigation bar
+        action: click
+  - prompt: Click the "NEWS" link.
+    commands:
+      - command: hover-text
+        text: NEWS
+        description: link in the navigation bar
+        action: click
+  - prompt: Click the "NEWS" link.
+    commands:
+      - command: hover-text
+        text: NEWS
+        description: link in the navigation bar
+        action: click
+  - prompt: Click the "NEWS" link.
+    commands:
+      - command: hover-text
+        text: NEWS
+        description: link in the navigation bar
+        action: click
+  - prompt: >-
+      Assert that the news section loads properly.  # Use the content of the
+      file from the environment
+    commands:
+      - command: assert
+        expect: the news section with "TOP STORIES" is visible
