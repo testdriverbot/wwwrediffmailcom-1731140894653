@@ -1,0 +1,20 @@
+version: 4.1.13
+steps:
+  - prompt: Locate the "Sign in" button for Rediffmail.
+    commands:
+      - command: hover-text
+        text: Sign in
+        description: link for signing into Rediffmail
+        action: hover
+  - prompt: Click the "Sign in" button.
+    commands:
+      - command: hover-text
+        text: Sign in
+        description: button for signing into Rediffmail
+        action: click
+  - prompt: >-
+      Assert that the login page appears.  # Use the content of the file from
+      the environment
+    commands:
+      - command: assert
+        expect: the login page with Username field is visible
