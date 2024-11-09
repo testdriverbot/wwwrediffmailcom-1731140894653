@@ -1,0 +1,20 @@
+version: 4.1.13
+steps:
+  - prompt: Locate the main call to action on the homepage.
+    commands:
+      - command: hover-text
+        text: Create Account
+        description: main call to action on the homepage
+        action: click
+  - prompt: Click the call to action.
+    commands:
+      - command: hover-text
+        text: Create my account
+        description: main call to action button
+        action: click
+  - prompt: >-
+      Assert that the intended action or page transition occurs.  # Use the
+      content of the file from the environment
+    commands:
+      - command: assert
+        expect: Your full name cannot be blank.
